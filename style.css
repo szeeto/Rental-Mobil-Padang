@@ -430,37 +430,6 @@ main {
     width: fit-content;
 }
 
-.gallery h2 {
-    text-align: center;
-    margin-bottom: auto;
-    padding: 40px;
-}
-
-.gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.gallery-images img {
-    width: 240px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
-    transition: box-shadow 0.2s, transform 0.2s;
-    cursor: pointer;
-}
-
-.gallery-images img:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
-    transform: scale(1.04);
-}
-
 .fullscreen-img-bg {
     position: fixed;
     top: 0;
@@ -490,18 +459,6 @@ main {
     display: flex;
 }
 
-@media (max-width: 900px) {
-    .gallery-images img {
-        width: 90vw;
-        max-width: 320px;
-        height: 120px;
-    }
-
-    .gallery-images {
-        gap: 10px;
-    }
-}
-
 main {
     padding-top: 20px;
 }
@@ -529,7 +486,7 @@ main {
 
 .menu a:hover {
     text-decoration: underline;
-    color: white;
+    color: black;
     margin-top:60px;
 }
 @media (min-width: 1200px) {
@@ -596,16 +553,8 @@ main {
     max-width: 340px;
     margin-top: 24px;
   }
-  .gallery-images img {
-    width: 90vw;
-    max-width: 320px;
-    height: 120px;
-  }
-  .gallery-images {
-    gap: 10px;
-  }
 }
-
+  
 /* Untuk handphone kecil */
 @media (max-width: 600px) {
   .navbar {
@@ -647,7 +596,7 @@ main {
   .menu ul {
     display: none;
     flex-direction: column;
-    background: #fff;
+    background: #d1d1d1;
     position: absolute;
     top: 56px;
     right: 0;
