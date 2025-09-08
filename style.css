@@ -532,3 +532,99 @@ main {
     color: white;
     margin-top:60px;
 }
+@media (min-width: 1200px) {
+  .landing, .blog-section, .gallery {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landing-content, .landing-image {
+    padding: 32px;
+  }
+}
+
+/* Untuk tablet dan handphone */
+@media (max-width: 900px) {
+  .navbar {
+    height: 56px;
+    padding: 0 12px;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .menu ul {
+    gap: 6px;
+  }
+  .menu ul li a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  main {
+    padding-top: 70px;
+  }
+  .landing {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    padding: 24px 8px;
+  }
+  .landing-content {
+    padding-right: 0;
+  }
+  .landing-image {
+    text-align: center;
+  }
+  .landing-image img {
+    max-width: 90vw;
+    margin-left: 0;
+  }
+  .tentang-kami {
+    padding: 24px 8px;
+  }
+  .tentang-kami p {
+    margin: 0 12px 0 12px;
+  }
+  .landing-card {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 90vw;
+    max-width: 340px;
+    margin-top: 24px;
+  }
+  .gallery-images img {
+    width: 90vw;
+    max-width: 320px;
+    height: 120px;
+  }
+  .gallery-images {
+    gap: 10px;
+  }
+}
+
+/* Untuk handphone kecil */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .landing-title {
+    font-size: 1.5rem;
+  }
+  .landing-subtitle {
+    font-size: 1rem;
+  }
+  .gallery h2 {
+    font-size: 1.2rem;
+    padding: 20px 0 0 0;
+  }
+}
