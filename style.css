@@ -628,3 +628,35 @@ main {
     padding: 20px 0 0 0;
   }
 }
+/* Hamburger button, hidden on desktop */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* Responsive: show hamburger, hide menu on mobile */
+@media (max-width: 900px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border-radius: 0 0 8px 8px;
+    z-index: 1001;
+  }
+  .menu ul.active {
+    display: flex;
+  }
+}
