@@ -507,7 +507,7 @@ main {
     padding: 0 12px;
   }
   .logo img {
-    width: 40px;
+    width: 140px;
   }
   .menu {
     gap: 10px;
@@ -579,6 +579,7 @@ main {
 }
 /* Hamburger button, hidden on desktop */
 .navbar-toggle {
+  margin-bottom: 12px;
   display: none;
   background: none;
   border: none;
