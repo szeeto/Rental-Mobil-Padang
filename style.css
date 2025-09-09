@@ -332,19 +332,20 @@ main {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
-.tentang-kami h1 {
+.welcome h1 {
     font-size: 3rem;
     color: #2c3e50;
     text-align: center;
     margin-bottom: px;
 }
 
-.tentang-kami p {
+.welcome p{
     font-size: 16px;
     color: #444;
     text-align: center;
     margin: 0 100px 0 100px;
     margin-bottom: 20px;
+    justify-items: center;
 }
 
 .card {
@@ -361,7 +362,7 @@ main {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 #0894b433;
 }
 
 .landing-card {
@@ -374,7 +375,7 @@ main {
 .landing-card .card img {
     width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: 4px;
     display: block;
     margin: 0 auto;
 }
@@ -503,11 +504,12 @@ main {
 /* Untuk tablet dan handphone */
 @media (max-width: 900px) {
   .navbar {
-    height: 56px;
+    height: 40px;
     padding: 0 12px;
   }
   .logo img {
-    width: 140px;
+    width: 100px;
+    vertical-align: middle;
   }
   .menu {
     gap: 10px;
@@ -554,59 +556,7 @@ main {
     margin-top: 24px;
   }
 }
-  
-/* Untuk handphone kecil */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 8px;
-  }
-  .menu ul {
-    flex-direction: column;
-    gap: 0;
-  }
-  .landing-title {
-    font-size: 1.5rem;
-  }
-  .landing-subtitle {
-    font-size: 1rem;
-  }
-  .gallery h2 {
-    font-size: 1.2rem;
-    padding: 20px 0 0 0;
-  }
-}
-/* Hamburger button, hidden on desktop */
-.navbar-toggle {
-  margin-bottom: 12px;
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #222;
-  cursor: pointer;
-  margin-right: 12px;
-}
-
-/* Responsive: show hamburger, hide menu on mobile */
-@media (max-width: 900px) {
-  .navbar-toggle {
-    display: block;
-  }
-  .menu ul {
-    display: none;
-    flex-direction: column;
-    background: #d1d1d1;
-    position: absolute;
-    top: 56px;
-    right: 0;
-    width: 180px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    border-radius: 0 0 8px 8px;
-    z-index: 1001;
-  }
-  .menu ul.active {
-    display: flex;
-  }
+.navbar-menu a:hover{
+    color: white;
+    background-color: red;
 }
