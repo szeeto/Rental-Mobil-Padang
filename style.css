@@ -560,3 +560,14 @@ main {
     color: white;
     background-color: red;
 }
+.container-gallery{
+    margin:20px;
+    padding:10px;
+}
+.container-gallery h1{
+    text-align: center;
+    z-index: 100%;
+} 
+.card-body-gallery{
+    box-shadow: #0894b433;
+}
